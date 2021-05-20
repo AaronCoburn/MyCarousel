@@ -44,8 +44,8 @@ h1{
 .carousel__track-container{
     background: lightblue;
     /* padding: 10px; */
-    height: 100%;
-    width: 60%;
+    height: 600px;
+    width: 800px;
     position: relative;
     overflow: hidden;
 }
@@ -109,7 +109,32 @@ h1{
 .is-hidden { visibility:hidden; }
 
 /* Media */
-/* @media only screen and (max-width: 1199px) {}
+/* @media only screen and (max-width: 1199px) {
+    
+}
+
 @media only screen and (max-width: 991px) {}
-@media only screen and (max-width: 767px) {}
-@media only screen and (max-width: 575px) {} */
+@media only screen and (max-width: 767px) {}*/
+@media only screen and (max-width: 575px) {
+    .carousel__track-container{
+        transform: scale(0.5, 0.5);
+    /* width: 50%;
+    height: 40%; */
+    }
+    .carousel__images{
+        transform: scale(0.5, 0.5);
+
+    }
+
+    
+    .carousel__button--left {
+        transform: translate(160px, 320px);
+
+    }
+    .carousel__button--right {
+        transform: translate(608px, -320px);
+    /* width: 150px;
+    height: 200px; */
+    }
+    }
+} 
