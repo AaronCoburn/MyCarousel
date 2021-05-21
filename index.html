@@ -9,52 +9,79 @@
 </head>
 <body>
     <h1>Hello This is my First Webpage</h1>
-    <div><p>My name's Aaron, pleased to meet you and welcome to my website.  
-        telling us a little about yourself and your coding aspiration Full Stack Web Development </p></div>
-    <div></div>
-        <p>My links</p>
-        <ol>Github: </ol>
-        <ol>FreeCodeCamp: </ol>
-        <ol>codewars: </ol>
-        
+    <div><p>My name's Aaron, pleased to meet you and welcome to my website.</p></div>
+    <div>
+        <h2><p>My links</p></h2>
+        <div>
+            <ol>
+                <li>Github: <a href="https://github.com/fcc561aa587-4261-4d67-b9a9-16d10b9fbc52/MyCarousel">Here</a></li>
+                <li>FreeCodeCamp: <a href="https://www.freecodecamp.org/fcc561aa587-4261-4d67-b9a9-16d10b9fbc52">Here</a></li>
+                <li>codewars: <a href="https://www.codewars.com/users/ACodewar">Here</a></li>
+            </ol>
+        </div>
+    </div>
 
+    <!-- Complete carousel       -->
     <div class="carousel">
+        <!-- Container for pics       -->
+        <div class="carousel__track-container">
+            <!-- Container for pics       -->
+            <ul class="carousel__track">
+
+                <li 
+                    class="carousel__slide current-slide img-fluid">
+                    <img class="carousel__image" src="1.jpg" alt="">
+
+                </li>
+
+                <li 
+                    class="carousel__slide img-fluid">
+                    <img class="carousel__image" src="2.jpg" alt="">
+
+                </li>
+
+                <li 
+                    class="carousel__slide img-fluid">
+                    <img class="carousel__image" src="3.jpg" alt="">
+
+                </li>
+
+                <li 
+                    class="carousel__slide img-fluid">
+                    <img class="carousel__image" src="4.jpg" alt="">
+
+                </li>
+                
+                <li 
+                    class="carousel__slide img-fluid">
+                    <img class="carousel__image" src="5.jpg" alt="">
+
+                </li>
+
+                <li 
+                    class="carousel__slide img-fluid">
+                    <img class="carousel__image" src="6.jpg" alt="">
+
+                </li>
+
+            </ul>
+        </div>
+
         <button class="carousel___button carousel__button--left is-hidden">
             <img src="img/left.png" alt="">
         </button>
-        <div class="carousel__track-container">
-            <ul class="carousel__track">
-                <li class="carousel__slide current-slide img-fluid">
-                    <img class="carousel__image" src="1.jpg" alt="">
-                </li>
-                <li class="carousel__slide img-fluid">
-                    <img class="carousel__image" src="2.jpg" alt="">
-                </li>
-                <li class="carousel__slide img-fluid">
-                    <img class="carousel__image" src="3.jpg" alt="">
-                </li>
-                <li class="carousel__slide img-fluid">
-                    <img class="carousel__image" src="4.jpg" alt="">
-                </li>
-                <li class="carousel__slide img-fluid">
-                    <img class="carousel__image" src="5.jpg" alt="">
-                </li>
-                <li class="carousel__slide img-fluid">
-                    <img class="carousel__image" src="6.jpg" alt="">
-                </li>
-            </ul>
-        </div>
+
         <button class="carousel___button carousel__button--right">
             <img src="img/right.png" alt="">
         </button>
 
         <div class="carousel__nav">
-        <button class="carousel__indicator current-slide"></button>
-        <button class="carousel__indicator"></button>
-        <button class="carousel__indicator"></button>
-        <button class="carousel__indicator"></button>
-        <button class="carousel__indicator"></button>
-        <button class="carousel__indicator"></button>
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
         </div>
     </div>
 
