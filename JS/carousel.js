@@ -1,11 +1,33 @@
+// Get children Pictures from track and make array
 const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
+
+const slideImages = document.querySelector('#pic').clientHeight;
+// const ImageAdjustmentH = Array.from(slideImages);
+// console.log(track);
+
+// Get buttons
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
+
+// Get dots in nav and create an array
 const dotsNav = document.querySelector('.carousel__nav');
 const dots = Array.from(dotsNav.children);
 
+const TrackHeight = track.getBoundingClientRect().height;
+// const ImagesH = targetSlide.getBoundingClientRect().height;
+// const slideImages = slides[0].getBo undingClientRect();
+// const setSlideHeight = slideImages;
+
+// get slides width 
 const slideWidth = slides[0].getBoundingClientRect().width;
+// const Scalingtrack = slides[0].getBoundingClientRect().cheight;
+console.log(TrackHeight);
+
+// const setSlideH = (slide, index) => {
+//     slide.style.height = slide.style.width + 'px';
+// };
+// slides.forEach(setSlideH);
 
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';

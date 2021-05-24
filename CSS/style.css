@@ -56,10 +56,10 @@ h1{
 }
 
 .carousel__track-container{
-    background: lightblue;
+    /* background: lightblue; */
     /* padding: 10px; */
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     max-width: 800px;
     max-height: 600px;
     /* position: relative; */
@@ -141,6 +141,8 @@ h1{
      }
     .carousel__images{
         transform: scale(0.5, 0.5);
+        max-width: 800px;
+        max-height: 600px;
 
     }
 
