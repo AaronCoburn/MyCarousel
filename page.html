@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Carousel</title>
+    <link rel="stylesheet" href="CSS/styled.css">
+</head>
+<body style="max-height: 1200px;">
+	<header>
+		<h1>Hello This is my First Webpage</h1>
+		<div><p>My name's Aaron, pleased to meet you and welcome to my website.</p></div>
+		<div>
+			<h2><p>My links</p></h2>
+			<div>
+				<ol>
+					<li>Github: <a href="https://github.com/fcc561aa587-4261-4d67-b9a9-16d10b9fbc52/MyCarousel">Here</a></li>
+					<li>FreeCodeCamp: <a href="https://www.freecodecamp.org/fcc561aa587-4261-4d67-b9a9-16d10b9fbc52">Here</a></li>
+					<li>codewars: <a href="https://www.codewars.com/users/ACodewar">Here</a></li>
+				</ol>
+			</div>
+		</div>
+	</header>
+	
+    <div class="Carousel">
+		<!-- Make seprate Images for carousel -->
+		<div class="Carousel-Image transistion">
+			<div class="Text">
+				<h2>Brigde</h2>
+				<p>The is a Picture<br>of a brigde</p>
+			</div>
+			<img src="1.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="Carousel-Image transistion">
+			<div class="Text">
+				<h2>Faces</h2>
+				<p>The is a Picture<br>of faces painting</p>
+			</div>
+			<img src="2.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="Carousel-Image transistion">
+			<div class="Text">
+				<h2>Cityscape</h2>
+				<p>The is a Picture<br>of New York city</p>
+			</div>
+			<img src="3.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="Carousel-Image transistion">
+			<div class="Text">
+				<h2>Black Hole</h2>
+				<p>The is a Picture<br>of a black hole</p>
+			</div>
+			<img src="4.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="Carousel-Image transistion">
+			<div class="Text">
+				<h2>Shinto</h2>
+				<p>The is a Picture<br>of a Shinto building</p>
+			</div>
+			<img src="5.jpg" style="width: 100%; height: 100%;">
+		</div>
+
+        <div class="Carousel-Image transistion">
+			<div class="Text">
+				<h2>Rain</h2>
+				<p>The is a Picture<br>of a rain pattern</p>
+			</div>
+			<img src="6.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<!-- Create Previous and Next buttons with onclick for JS -->
+		<a class="Previous" onclick="ImageChanger(-1)">&#10094;</a>
+  		<a class="Next" onclick="ImageChanger(1)">&#10095;</a>
+		
+		  <!-- Create a Navagation box with onclick for JS -->
+		<div class="NavagationCircleBox" style="text-align:center">
+			<span class="Circle" onclick="GoToImage(1)"></span>
+			<span class="Circle" onclick="GoToImage(2)"></span>
+			<span class="Circle" onclick="GoToImage(3)"></span>
+			<span class="Circle" onclick="GoToImage(4)"></span>
+			<span class="Circle" onclick="GoToImage(5)"></span>
+            <span class="Circle" onclick="GoToImage(6)"></span>
+		</div>
+	</div>
+				<!-- Create a Play and Pause button -->
+				<!--
+				<div class="PauseTEct" style="margin: auto;"> 
+				 <p> This isText place for pause button </p>
+	</div> -->
+	
+<script src="JS/Carousel1.js"></script>
+</body>
+</html>
+
+
