@@ -62,7 +62,7 @@ header{
 	height: 15px;
 	border: 3px solid #fff;
 	border-radius: 50%;
-	margin: 0 10px;
+	margin: 0 5px;
 	cursor: pointer;
 	background-color: rgba(128, 128, 247, 0.2);
 }
@@ -77,14 +77,14 @@ header{
 }
 
 /* Creating the transistion animation */
-/* .transistion {
+ .transistion {
   -webkit-animation-name: transistion;
   -webkit-animation-duration: 3s;
   animation-name: transistion;
   animation-duration: 3s;
-} */
+} 
 
-/* @-webkit-keyframes transistion {
+ @-webkit-keyframes transistion {
   from {opacity: 0.3}
   to {opacity: 1}
 }
@@ -92,7 +92,7 @@ header{
 @keyframes transistion {
   from {opacity: 0.3}
   to {opacity: 1}
-} */
+} 
 
 /* Text styling with Animation */
 .Text{
@@ -102,13 +102,13 @@ header{
 	line-height: 35px;
 	top: 40%;
 	left: 15%;
-	/* -webkit-animation-name: posi;
+	-webkit-animation-name: posi;
   	-webkit-animation-duration: 2s;
   	animation-name: posi;
-  	animation-duration: 2s; */
+  	animation-duration: 2s; 
 	z-index: 1;
 }
-/* 
+
 @-webkit-keyframes posi {
   from {left: 25%;}
   to {left: 15%;}
@@ -117,7 +117,7 @@ header{
 @keyframes posi {
   from {left: 25%;}
   to {left: 15%;}
-} */
+} 
 
 .Text h1{
 	color: #00a7ff; /* blue */
@@ -130,7 +130,7 @@ header{
 }
 
 /* Animation for the image carousel */
-/* img{
+img{
 	transform: scale(1.5, 1.5);
 	-webkit-animation-name: zoomin;
   	-webkit-animation-duration: 40s;
@@ -146,7 +146,7 @@ header{
 @keyframes zoomin {
   from {transform: scale(1, 1);}
   to {transform: scale(1.5, 1.5);}
-} */
+} 
 
 /* Make flexible with mobile */
 @media screen and (max-width: 800px){
@@ -166,13 +166,13 @@ header{
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		/* -webkit-animation-name: posi2;
+		-webkit-animation-name: posi2;
 		-webkit-animation-duration: 2s;
 		animation-name: posi2;
-		animation-duration: 2s; */
+		animation-duration: 2s; 
 	}
 
-	/* @-webkit-keyframes posi2 {
+	 @-webkit-keyframes posi2 {
 	  from {top: 35%;}
 	  to {top: 50%;}
 	}
@@ -181,7 +181,7 @@ header{
 	@keyframes posi2 {
 	  from {top: 35%;}
 	  to {top: 50%;}
-	} */
+	} 
 
 	.Text h1{
 		font-size: 40px;
@@ -190,7 +190,18 @@ header{
 		font-size: 13px;
 	}
 }
-
+@media screen and (max-width: 520px){
+	.Circle{
+		margin: 0 0;
+		width: 10px;
+        height: 10px;
+	}
+	.Text{
+		font-size: 12pt;
+		letter-spacing: 1px;
+		line-height: 24px;
+	}
+}
 @media screen and (max-width: 250px){
      .Carousel-Image {
 		max-width: 250px;
@@ -200,6 +211,16 @@ header{
 	.Text h1{
 		font-size: 16px;
 		/* margin-bottom: 40px; */
+	}
+	.Circle{
+		width: 5px;
+        height: 5px;
+		margin: 0 0;
+	}
+	.Text{
+		font-size: 10pt;
+		letter-spacing: 0.5px;
+		line-height: 12px;
 	}
 }
 
